@@ -1,3 +1,14 @@
+/**
+ * Author:    Selena Hyon
+ * Created:   Spring 2021
+ *
+ * Public Domain
+ **/
+
+/*horizontal parallax effect
+--https://www.youtube.com/watch?v=OeaHnxahf40-- @RedStapler
+ Pure CSS Horizontal Website Tutorial for Beginners*/
+
 body {
   margin: 0;
   padding: 0;
@@ -14,45 +25,45 @@ body {
   transform-origin: top left;
 }
 .one {
-  background: url("pg1.png");
+  background: url("img/pg1.png");
   background-size: auto 100vh;
   background-repeat: round;
   width: 700vw;
 }
 .two {
-  background: url("pg2.png");
+  background: url("img/pg2.png");
   background-size: auto 100vh;
   background-repeat: round;
   width:700vw;
 }
 .three {
-  background: url("pg3.png");
+  background: url("img/pg3.png");
   background-size: auto 100vh;
   background-repeat: round;
   width: 700vw;
 }
 .four {
-  background: url("last.png");
+  background: url("img/pg2.png");
   background-size: auto 100vh;
-  background-repeat: no-repeat;
+  background-repeat: round;
   width: 700vw;
 }
 .five {
-  background: url("last.png");
+  background: url("img/pg2.png");
   background-size: auto 100vh;
-  background-repeat: no-repeat;
+  background-repeat: round;
   width: 700vw;
 }
 .six {
-  background: url("last.png");
+  background: url("img/pg2.png");
   background-size: auto 100vh;
-  background-repeat: no-repeat;
+  background-repeat: round;
   width: 700vw;
 }
 .seven {
-  background: url("last.png");
+  background: url("img/pg2.png");
   background-size: auto 100vh;
-  background-repeat: no-repeat;
+  background-repeat: round;
   width: 700vw;
 }
 .outer-wrapper {
@@ -69,4 +80,17 @@ body {
 }
 ::-webkit-scrollbar {
   display:none;
+}
+/* Title Page */
+#title{
+  color: white;
+  font: 50px;
+  text-decoration: overline;
+  text-align: center;
+}
+/* Navagation--Table of Contents */
+#navPg{
+  padding-top: 50px;
+  font-size: 80px;
+  text-align: center;
 }
