@@ -8,7 +8,13 @@
 /*horizontal parallax effect
 --https://www.youtube.com/watch?v=OeaHnxahf40-- @RedStapler
  Pure CSS Horizontal Website Tutorial for Beginners*/
-
+ @font-face{
+     font-family:"farm-to-market-fancy-regular";
+     src:url("https://dafonttop.com/wp-data/f/105/12105/file/FarmToMarketFancy-lnm5.otf") format("woff"),
+     url("https://dafonttop.com/wp-data/f/105/12105/file/FarmToMarketFancy-lnm5.otf") format("opentype"),
+     url("https://dafonttop.com/wp-data/f/105/12105/file/FarmToMarketFancy-lnm5.otf") format("truetype");
+ }
+ span.font0{font-family:"farm-to-market-fancy-regular";font-size:65px;text-transform:none;}
 body {
   margin: 0;
   padding: 0;
@@ -16,6 +22,7 @@ body {
 .slide {
   width: 100vw;
   height: 100vh;
+  font-family: "farm-to-market-fancy-regular";
 }
 .wrapper {
   display: flex;
@@ -25,43 +32,43 @@ body {
   transform-origin: top left;
 }
 .one {
-  background: url("img/pg1.png");
+  background: url("../img/pg1.png");
   background-size: auto 100vh;
   background-repeat: round;
   width: 700vw;
 }
 .two {
-  background: url("img/pg2.png");
+  background: url("../img/pg2.png");
   background-size: auto 100vh;
   background-repeat: round;
   width:700vw;
 }
 .three {
-  background: url("img/pg3.png");
+  background: url("../img/pg3.png");
   background-size: auto 100vh;
   background-repeat: round;
   width: 700vw;
 }
 .four {
-  background: url("img/pg4.png");
+  background: url("../img/pg4.png");
   background-size: auto 100vh;
   background-repeat: round;
   width: 700vw;
 }
 .five {
-  background: url("img/pg5.png");
+  background: url("../img/pg5.png");
   background-size: auto 100vh;
   background-repeat: round;
   width: 700vw;
 }
 .six {
-  background: url("img/pg6.png");
+  background: url("../img/pg6.png");
   background-size: auto 100vh;
   background-repeat: round;
   width: 700vw;
 }
 .seven {
-  background: url("img/pg7.png");
+  background: url("../img/pg7.png");
   background-size: auto 100vh;
   background-repeat: round;
   width: 700vw;
@@ -83,14 +90,13 @@ body {
 }
 /* Title Page */
 #title{
-  color: white;
-  font: 50px;
-  text-decoration: overline;
+  color: #C70039;
+  font-size: 80px;
   text-align: center;
+  position: fixed; bottom: 115px; left: 185px;
 }
 /* Navagation--Table of Contents */
 #navPg{
-  padding-top: 50px;
+position: fixed; top:115px;
   font-size: 80px;
-  text-align: center;
 }

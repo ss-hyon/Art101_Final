@@ -4,10 +4,49 @@
  *
  * Public Domain
  **/
- #mk {
-   width: 100%;
-   padding: 50px 0;
+ #mkHidden {
+   width:660px;
+   height: 415px;
+   padding: 50px;
    text-align: center;
    background-color: lightblue;
    margin-top: 20px;
+   color:black;
+   overflow: scroll;
  }
+#market{
+  font-size: 50px;
+  cursor: url('../img/search.png'), auto;
+}
+.marketButton{
+  background:transparent;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  overflow: hidden;
+  position: fixed;
+}
+#mkTextContent{
+  margin-left: 300px;
+}
+#found{
+  margin-left:1365px;
+  margin-top: 400px;
+}
+#sound{
+  margin-left: 900px;
+  margin-top: 90px;
+}
+#mkAudio{
+}
+#marketNav{
+  margin-top:80px;
+  margin-left: 50px;
+  color:white;
+}
