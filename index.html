@@ -23,9 +23,13 @@
     <div class="wrapper">
 
 <div class="slide one">
-        <div id="title">
-          <h1> From Farm to Table </h1>
-          <p>
+        <div id="titlePg">
+          <div id="follow"><img src="./img/blimp.png"/>
+            <div id="scrollBox">
+            <marquee behavior="scroll" direction="left" width="300" height="90" style="border:solid"> From Farm to Table </marquee>
+          </div>
+  </div>
+
           </div>
 </div>
 
@@ -37,7 +41,7 @@
               <a href="#transport">Transportation</a></br>
               <a href="#market">The Markets</a></br>
               <a href="#table">Table</a></br>
-              <div>
+            </div>
               </nav>
 </div>
 
@@ -80,14 +84,8 @@
 </div>
 
 <div id= "market" class="slide six">
-  <div id="mkTextContent">
-  <h1>WHY BUY LOCAL?</h1>
-  <button id="mkInfo" onclick="marketInfo()">Learn More</button>
-  <div id="mkHidden">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/dOLMbWCUNBI?controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-  <h2>Search For Your Local Farmer's Market!</h2>
-</div>
+  <h1 id="mkTitle"> Search Around to Find Your Local Farmer's Market!</h1>
+    <p><button class="mkInfo" onclick="marketInfo()">Click Here To Learn More</button></p>
         <button class="marketButton" id="found" onclick ="searchFound()">FOUND</button>
       <div id="sound">
         <button class="marketButton" id="mkAudio">Sound</button>
@@ -95,9 +93,21 @@
         <source src="./mp3/marketSounds.mp3" type='audio/mp3'/>
       </audio>
     </div>
+    <figure>
+    <div id="mkHidden">
+    <iframe width="460" height="215" src="https://www.youtube.com/embed/dOLMbWCUNBI?controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <figcaption>Why buy local?</figcaption>
+      <p>Look & Find</p>
+      <img src="./img/corn.png">
+            <figcaption>California Certifited Markets</figcaption>
+      <img src="./img/mk_man.png">
+        <figcaption>market ASMR</figcaption>
+  </div>
+</figure>
       <nav id="marketNav">
       <a href="#navPg">table of contents</a>
       </nav>
+
 </div>
 
 

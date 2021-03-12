@@ -4,28 +4,29 @@
  *
  * Public Domain
  **/
- //text box info
-$("#mkHidden").hide();
 function searchFound(){
-   alert("YOU FOUND IT!");
+  alert("YOU FOUND IT!" + "Click to find your nearest California Certified Farmer's market.");
   window.open("https://ecologycenter.org/fmfinder/");
 }
+
  function marketInfo() {
   var x = document.getElementById("mkHidden");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
+  if (x.style.visibility === 'hidden') {
+      x.style.visibility = 'visible';
+    } else {
+      x.style.visibility = 'hidden';
+    }
   }
-}
 var button = document.getElementById("mkAudio");
 var audio = document.getElementById("mkPlayer");
 button.addEventListener("click", function(){
   if(audio.paused){
     audio.play();
     button.innerHTML = "Pause";
+    button.style.color = "red";
   } else {
     audio.pause();
     button.innerHTML = "Play";
+    button.style.color = "transparent";
   }
 });
