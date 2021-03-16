@@ -4,6 +4,7 @@
  *
  * Public Domain
  **/
+ //Image cursor movement
  $(document).mousemove(function(e) {
    $("#follow").css({
      left: e.pageX,

@@ -4,11 +4,13 @@
  *
  * Public Domain
  **/
+//Found Invisible button
 function searchFound(){
   alert("YOU FOUND IT!" + "Click to find your nearest California Certified Farmer's market.");
   window.open("https://ecologycenter.org/fmfinder/");
 }
 
+//hidden Info button
  function marketInfo() {
   var x = document.getElementById("mkHidden");
   if (x.style.visibility === 'hidden') {
@@ -17,6 +19,8 @@ function searchFound(){
       x.style.visibility = 'hidden';
     }
   }
+
+//Hidden Audio Button
 var button = document.getElementById("mkAudio");
 var audio = document.getElementById("mkPlayer");
 button.addEventListener("click", function(){
