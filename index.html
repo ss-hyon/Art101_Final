@@ -9,7 +9,8 @@
   <link rel="stylesheet" type="text/css" href="css/slide5.css">
   <link rel="stylesheet" type="text/css" href="css/slide6.css">
   <link rel="stylesheet" type="text/css" href="css/slide7.css">
-  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> -->
   <script src="js/slide1.js" defer></script>
   <script src="js/slide2.js" defer></script>
   <script src="js/slide3.js" defer></script>
@@ -17,6 +18,10 @@
   <script src="js/slide5.js" defer></script>
   <script src="js/slide6.js" defer></script>
   <script src="js/slide7.js" defer></script>
+  <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script> -->
 </head>
 <body>
   <div class="outer-wrapper">
@@ -111,11 +116,23 @@
 </div>
 
 
-<div id="table" class="slide seven">// JunYao
-                        <nav>
+<div id="table" class="slide seven">
+                        <nav >
                           <a href="#navPg">table of contents</a>
                         </nav>
-                        //slide 7: bring food to table
+
+              <h1 id="tbTitle">Let's bring them to your table!</h1>
+
+                      <!-- <div class = recipeButton data-aos="fade-up"> -->
+                        <p><button class = "recipe" onclick = "recipeInfo()" >Click Here To Find Out</button></p>
+                        <!-- <button class="recipeButton" id="foundRecipe" onclick ="searchFoundRecipe()">FOUND</button> -->
+                <!-- </div> -->
+                        <figure>
+                        <div id="recipeHidden">
+                        <iframe width="460" height="770" src="https://www.allrecipes.com/recipes/1754/us-recipes/us-recipes-by-state/california/" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                      </div>
+                    </figure>
 </div>
 
                     </div>
