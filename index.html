@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>👨‍🌾Group 16-From Farm to Table🍽️</title>
+  <title>Group 16-Farm to Fork</title>
   <link rel="stylesheet" type="text/css" href="css/main.css">
   <link rel="stylesheet" type="text/css" href="css/slide2.css">
   <link rel="stylesheet" type="text/css" href="css/slide3.css">
@@ -22,14 +22,18 @@
   <div class="outer-wrapper">
     <div class="wrapper">
 
-      <div class="slide one">
-        <div id="title">
-          <h1> From Farm to Table </h1>
-          <p>
+<div class="slide one">
+        <div id="titlePg">
+          <div id="follow"><img src="./img/blimp.png"/>
+            <div id="scrollBox">
+            <marquee behavior="scroll" direction="left" width="300" height="90" style="border:solid"> From Farm to Fork </marquee>
           </div>
-        </div>
+  </div>
 
-        <div class="slide two">
+          </div>
+</div>
+
+<div class="slide two">
           <nav>
             <div id="navPg">
               <a href="#farm">The Farm</a> </br>
@@ -37,103 +41,82 @@
               <a href="#transport">Transportation</a></br>
               <a href="#market">The Markets</a></br>
               <a href="#table">Table</a></br>
-              <div>
-              </nav>
             </div>
-
-            <div id="farm" class="slide three">//Mengya
-              <nav>
-                <a href="#navPg">table of contents</a>
               </nav>
-              // Farm
-              <h1> Farm </h1>
-              <a href="https://www.cdfa.ca.gov/">
-                View it!</a>
+</div>
 
-                <h1> California Local Food Sourse </h1>
-                // Description of California Local Products
-              </div>
+<div id="farm" class="slide three">
+                <nav>
+                <a href="#navPg">table of contents</a>
+                </nav>
 
-              <div id="farmers" class="slide four">
+    <h1> Farm </h1>
+             <a href="https://www.cdfa.ca.gov/" target="view_window">Click to view California Department Of Food And Agriculture</a>
+
+            <h1> California Local Food Sourse </h1>
+                  <a href="https://www.thespruceeats.com/california-local-foods-2216336" target="view_window">Click to view California Local Products</a>
+</div>
+
+<div id="farmers" class="slide four">
                 <nav>
                   <a href="#navPg">table of contents</a>
                 </nav>
-                <h1> Farmer Workers </h1>
-                <button onclick="window.open('http://www.lacooperativa.org/rights-farmworkers-california-3/','_blank','resizable=yes')" />Learn More</button>
-                <p> Click above to have an overview about farm workers' rights.</P>
-                  <h2> Farm Workers During COVID 19</h2>
-                  <button onclick="window.open('https://ufw.org','_blank','resizable=yes')" />Learn More</button>
-                  <p> Click above to the United Farm Workers website, where
+                <button onclick="pop()">Click</button>
+    <h1> Farmer Workers </h1>
+            <input type="button" onclick="window.open('http://www.lacooperativa.org/rights-farmworkers-california-3/','_blank','resizable=yes')" />
+            <p> This button above will take you to have an overview about farm workers' rights.</P>
+            <h2> Farm Workers During COVID 19</h2>
+            <input type="button" onclick="window.open('https://ufw.org','_blank','resizable=yes')" />
+            <p> This button above will take you to the United Farm Workers website, where
                     different campaigns are linked and COVID 19 measures </p>
-                  </div>
-<div class="slide five">
-      // Information of California exports
-      // where does our food go?
-      <h1>Knowing About Where Our Food Go</h1>
-      <h1>California Agricultural Exports 2019-2020</h1>
-    </div>
->>>>>>> parent of abc21d3 (Update index.html)
->>>>>>> bb49fa67b2f990fa5f72d393fb46c153ba8f5790
+</div>
 
-                  <div class="slide five">
-                    // Information of California exports
-                    // where does our food go?
-                    <h1>Knowing About Where Our Food Go</h1>
-                    <h1>California Agricultural Exports 2019-2020</h1>
-                  </div>
-
-                  <div id="transport" class="slide five">//Yuwei
-                    <nav>
-                      <a href="#navPg">table of contents</a>
-                    </nav>
+<div id="transport" class="slide five"><!--Yuwei-->
+                <nav>
+                  <a href="#navPg">table of contents</a>
+                </nav>
                     <!--Information of California exports-->
-
                     <!-- where does our food go?-->
-                    <h1>Where Does Our Food Go?</h1>
-                    <h1>California Agricultural Exports</h1>
-                    Which Year? (2016-2020) 20 <input type="number" min=16 max=20 value="20" id="myw_in1">
-                    <button type="button" name="button" id = "myw_button1">View it!</button>
-                  </div>
+            <h1>Transport: Where Does Our Food Go?</h1>
+            <h1>cdfa California Agricultural Exports</h1>
+            <div class = "myw_div1">Which Year? (2016-2020) 20 <input class="myw_inp" type="number" min=16 max=20 value="20" id="myw_in1"></div>
+            <button type="button" name="button" id = "myw_button1" class="myw_but1"></button>
+</div>
 
-  <div id= "market" class="slide six"> //Selena
-    <nav>
-      <a href="#navPg">table of contents</a>
-    </nav>
-    <h1>Supporting Local Markets</h1>
-    <p> Where can we buy local produced produce?<p>
-          <a href="https://ecologycenter.org/fmfinder/">
-            Find your local farmer's market </a> </br>
-            <button onclick="marketInfo()">Learn More</button>
-            <div id="mk">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/dOLMbWCUNBI"
-               frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
-               gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
+<div id= "market" class="slide six">
+  <h1 id="mkTitle"> Search Around to Find Your Local Farmer's Market!</h1>
+    <p><button class="mkInfo" onclick="marketInfo()">Click Here To Learn More</button></p>
+        <button class="marketButton" id="found" onclick ="searchFound()">FOUND</button>
+      <div id="sound">
+        <button class="marketButton" id="mkAudio">Sound</button>
+      <audio id="mkPlayer">
+        <source src="./mp3/marketSounds.mp3" type='audio/mp3'/>
+      </audio>
+    </div>
+    <figure>
+    <div id="mkHidden">
+    <iframe width="460" height="215" src="https://www.youtube.com/embed/dOLMbWCUNBI?controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <figcaption>Why buy local?</figcaption>
+      <p>Look & Find</p>
+      <img src="./img/corn.png">
+            <figcaption>California Certifited Markets</figcaption>
+      <img src="./img/mk_man.png">
+        <figcaption>market ASMR</figcaption>
   </div>
+</figure>
+      <nav id="marketNav">
+      <a href="#navPg">table of contents</a>
+      </nav>
 
-                  <div id= "market" class="slide six"> //Selena
-                    <nav>
-                      <a href="#navPg">table of contents</a>
-                    </nav>
-                    <h1>Supporting Local Markets</h1>
-                    <p> Where can we buy local produced produce?<p>
-                      <a href="https://ecologycenter.org/fmfinder/">
-                        Find your local farmer's market </a> </br>
-                        <button onclick="marketInfo()">Learn More</button>
-                        <div id="mk">
-                          <iframe width="560" height="315" src="https://www.youtube.com/embed/dOLMbWCUNBI"
-                          frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
-                          gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                      </div>
+</div>
 
-                      <div id="table" class="slide seven">// JunYao
+
+<div id="table" class="slide seven">// JunYao
                         <nav>
                           <a href="#navPg">table of contents</a>
                         </nav>
                         //slide 7: bring food to table
-                        <h1>Let's bring them to the table!</h1>
-                      </div>
+</div>
 
                     </div>
                   </div>
