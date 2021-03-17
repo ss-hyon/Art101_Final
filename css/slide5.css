@@ -1,0 +1,25 @@
+.myw_but1{
+
+  background: #2E8B57;
+
+  color: #FFD700;
+  padding: 5px;
+  font-family: sans-serif;
+  font-size: 20px;
+  border:none;
+  width: 150px;
+  height: 80px;
+  background: url(../img/ywbutton1d.gif) no-repeat;
+}
+.myw_div1{
+  font-family: sans-serif;
+  font-size:24px;
+}
+.myw_inp{
+  outline-style: none ;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 6px 6px;
+  width: 50px;
+  font-size: 24px;
+}
